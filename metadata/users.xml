@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<users xmlns="http://www.demandware.com/xml/impex/user/2007-09-05">
+    <user login="v.i.shuklin@gmail.com" enabled-flag="true">
+        <credentials>
+            <external-id>5a706214-4532-4c67-adfb-60552693cac9</external-id>
+        </credentials>
+        <profile>
+            <first-name>Vladislav</first-name>
+            <last-name>Shuklin</last-name>
+            <email>v.i.shuklin@gmail.com</email>
+            <preferred-data-locale>en_US</preferred-data-locale>
+        </profile>
+    </user>
+
+</users>

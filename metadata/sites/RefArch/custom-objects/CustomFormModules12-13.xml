@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<custom-objects xmlns="http://www.demandware.com/xml/impex/customobject/2006-10-31">
+    <custom-object type-id="CustomFormModules12-13" object-id="v.i.shuklin@gmail.com">
+        <object-attribute attribute-id="firstName">Vlad</object-attribute>
+        <object-attribute attribute-id="lastName">Shuklin</object-attribute>
+        <object-attribute attribute-id="socialnetwork">https://www.linkedin.com/in/vladislavshuklin</object-attribute>
+    </custom-object>
+
+</custom-objects>
