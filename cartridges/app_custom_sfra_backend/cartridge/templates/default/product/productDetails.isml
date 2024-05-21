@@ -135,6 +135,10 @@
             <isset name="loopState" value="{count: 1}" scope="page" />
             <isinclude template="product/components/descriptionAndDetails" />
 
+            <iscomment> Recomendations from the primaryCategory </iscomment>
+            <isinclude template="product/components/primaryCategoryRecomendations" />
+            <iscomment> Recomendations from the primaryCategory </iscomment>
+
             <div class="recommendations">
                 <isslot id="product-recommendations-m" description="Recommended products" context="global" />
             </div>
