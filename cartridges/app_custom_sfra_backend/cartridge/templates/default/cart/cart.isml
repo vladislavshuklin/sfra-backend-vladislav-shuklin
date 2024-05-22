@@ -64,6 +64,13 @@
                             </isif>
                         </isif>
                     </isloop>
+
+                    <iscomment> Exercise 3. Info about exceeding of specific ammount </iscomment>
+                    <isif condition="${pdict.totalPriceCount}"  >
+                        <isinclude template="cart/cartExceeds" />
+                    </isif>
+                    <iscomment> Exercise 3. Info about exceeding of specific ammount </iscomment>
+
                     <isinclude template="cart/cartApproachingDiscount" />
                 </div>
                 <!---totals, and checkout actions--->
