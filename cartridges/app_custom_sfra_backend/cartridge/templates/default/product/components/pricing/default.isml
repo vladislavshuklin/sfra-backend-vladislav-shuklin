@@ -40,5 +40,5 @@
         var salesPrice = finalOrigPrice.sales.decimalPrice;
         var discount = (Math.round(((regularPrice - salesPrice)/regularPrice)*100)).toFixed(0);
     </isscript>
-    <p style="color:#bf0400; font-size: 1.2rem; font-weight:700">${Resource.msgf('text.price.discount', 'product', null, discount)}</p>
+    <p class="custom-message">${Resource.msgf('text.price.discount', 'product', null, discount)}</p>
 </isif>
