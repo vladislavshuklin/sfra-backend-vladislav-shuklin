@@ -3,9 +3,10 @@
     var assets = require('*/cartridge/scripts/assets');
     assets.addJs('/js/search.js');
     assets.addCss('/css/search.css');
+    assets.addCss('/css/custom.css');
 </isscript>
 <iscomment> Recomendations from the primaryCategory </iscomment>
-<div style="padding-top: 3vh" class="row product-grid" itemtype="http://schema.org/SomeProducts" itemid="#product">
+<div class="row product-grid p-top" itemtype="http://schema.org/SomeProducts" itemid="#product">
     <isloop items="${pdict.categoryProducts}" var="product">
         <div class="col-sm-3 col-xs-6">
             <isobject object="${product.productSearchHit}" view="searchhit">
