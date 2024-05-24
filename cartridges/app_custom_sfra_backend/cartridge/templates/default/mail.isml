@@ -1,0 +1,8 @@
+<div>
+    <div>${Resource.msg('text.product.added', 'email', null)}</div>
+    <div><img src="${pdict.productPicture}" alt="${pdict.productName}" /></div>
+    <div>${Resource.msg('text.product.name', 'email', null)} <a href="${pdict.productLink}" target="_blank">${pdict.productName}</a></div>
+    <div>${Resource.msg('text.product.description', 'email', null)} ${pdict.productDescription}</div>
+    <div>${Resource.msg('text.product.price.each', 'email', null)} ${pdict.currencyCode} ${pdict.productPrice}</div>
+    <div>${Resource.msg('text.product.quantity', 'email', null)} ${pdict.productQuantity}</div>
+</div>
