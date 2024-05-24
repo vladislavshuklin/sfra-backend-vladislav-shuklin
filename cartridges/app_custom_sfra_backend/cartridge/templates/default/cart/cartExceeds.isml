@@ -1,3 +1,6 @@
-<div style="background-color: #eeae06; padding: 0 1vw; max-width: 65%">
+<isscript>
+    assets.addCss('/css/custom.css');
+</isscript>
+<div class="cart-exceed">
     <span>${Resource.msgf('msg.bonus.price.exceed','cart',null,pdict.priceToExceed)}<span>
 </div>
