@@ -33,7 +33,7 @@ server.append('AddProduct', function (req, res, next) {
         productInfo.put("productPicture",productPicture);
         productInfo.put("productName",productName);
         productInfo.put("productDescription",productDescription);
-        productInfo.put("productPrice",productPrice);
+        productInfo.put("productPrice",parseFloat(productPrice).toFixed(2));
         productInfo.put("currencyCode",currencyCode);
         productInfo.put("productQuantity", Math.round(productQuantity).toFixed(0));
         productInfo.put("emailSubject", Site.current.getCustomPreferenceValue('emailSubjectCartProductAdded'));
