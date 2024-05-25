@@ -1,0 +1,3 @@
+<div class="cart-exceed">
+    <span>${Resource.msgf('msg.bonus.price.exceed', 'cart', null, pdict.priceToExceed)}<span>
+</div>
