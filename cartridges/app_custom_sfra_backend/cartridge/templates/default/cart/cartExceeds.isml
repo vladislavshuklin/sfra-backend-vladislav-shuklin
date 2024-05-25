@@ -2,5 +2,5 @@
     assets.addCss('/css/custom.css');
 </isscript>
 <div class="cart-exceed">
-    <span>${Resource.msgf('msg.bonus.price.exceed','cart',null,pdict.priceToExceed)}<span>
+    <span>${Resource.msgf('msg.bonus.price.exceed', 'cart', null, pdict.priceToExceed)}<span>
 </div>
