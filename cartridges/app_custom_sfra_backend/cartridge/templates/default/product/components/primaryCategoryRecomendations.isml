@@ -10,8 +10,9 @@
     <isloop items="${pdict.categoryProducts}" var="product">
         <div class="col-sm-3 col-xs-6">
             <isobject object="${product.productSearchHit}" view="searchhit">
-                <isinclude url="${URLUtils.url('Tile-Show', 'pid', product.productID, 'swatches', true, 'ratings', true)}" />
+                <isinclude
+                    url="${URLUtils.url('Tile-Show', 'pid', product.productID, 'swatches', true, 'ratings', true)}" />
             </isobject>
         </div>
-    </isloop>
+    </isloop>S
 </div>
