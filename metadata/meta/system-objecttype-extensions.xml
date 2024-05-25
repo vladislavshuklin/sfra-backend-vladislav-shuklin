@@ -4727,6 +4727,27 @@
                 <externally-managed-flag>false</externally-managed-flag>
                 <default-value>false</default-value>
             </attribute-definition>
+            <attribute-definition attribute-id="emailAdmin">
+                <display-name xml:lang="x-default">Email of Administrator</display-name>
+                <type>string</type>
+                <mandatory-flag>false</mandatory-flag>
+                <externally-managed-flag>false</externally-managed-flag>
+                <min-length>0</min-length>
+            </attribute-definition>
+            <attribute-definition attribute-id="emailFrom">
+                <display-name xml:lang="x-default">Email from</display-name>
+                <type>string</type>
+                <mandatory-flag>false</mandatory-flag>
+                <externally-managed-flag>false</externally-managed-flag>
+                <min-length>0</min-length>
+            </attribute-definition>
+            <attribute-definition attribute-id="emailSubjectCartProductAdded">
+                <display-name xml:lang="x-default">Email Subject When Product Added to the Cart</display-name>
+                <type>string</type>
+                <mandatory-flag>false</mandatory-flag>
+                <externally-managed-flag>false</externally-managed-flag>
+                <min-length>0</min-length>
+            </attribute-definition>
             <attribute-definition attribute-id="enableInfiniteScroll">
                 <display-name xml:lang="x-default">Enable Infinite Scroll</display-name>
                 <description xml:lang="x-default">This Boolean toggles the option for infinite scrolling or pagination from within the search grid.</description>
@@ -4926,6 +4947,9 @@
                 <attribute attribute-id="countryCode"/>
                 <attribute attribute-id="customerServiceEmail"/>
                 <attribute attribute-id="mapAPI"/>
+                <attribute attribute-id="emailAdmin"/>
+                <attribute attribute-id="emailFrom"/>
+                <attribute attribute-id="emailSubjectCartProductAdded"/>
             </attribute-group>
         </group-definitions>
     </type-extension>
