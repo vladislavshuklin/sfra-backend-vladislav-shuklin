@@ -30,8 +30,8 @@
             <span class="value" content="${price.decimalPrice}">
         </isif>
         <isinclude template="/product/components/pricing/formatted" />
-        </span>
     </span>
+</span>
 </span>
 
 <isif condition="${finalOrigPrice.list !== null}">
