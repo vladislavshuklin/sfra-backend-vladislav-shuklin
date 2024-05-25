@@ -2309,18 +2309,6 @@
                 <externally-defined-flag>false</externally-defined-flag>
                 <min-length>0</min-length>
             </attribute-definition>
-            <attribute-definition attribute-id="trainingBatteryLife">
-                <display-name xml:lang="x-default">Training Battery Life</display-name>
-                <type>string</type>
-                <localizable-flag>false</localizable-flag>
-                <site-specific-flag>false</site-specific-flag>
-                <mandatory-flag>false</mandatory-flag>
-                <visible-flag>true</visible-flag>
-                <externally-managed-flag>false</externally-managed-flag>
-                <order-required-flag>false</order-required-flag>
-                <externally-defined-flag>false</externally-defined-flag>
-                <min-length>0</min-length>
-            </attribute-definition>            
             <attribute-definition attribute-id="batteryType">
                 <display-name xml:lang="x-default">Battery Type</display-name>
                 <type>string</type>
