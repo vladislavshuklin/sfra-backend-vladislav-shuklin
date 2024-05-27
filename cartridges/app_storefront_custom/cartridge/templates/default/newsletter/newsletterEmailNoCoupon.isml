@@ -1,0 +1,4 @@
+<div>
+    <h1>${Resource.msgf('newsletter.email.noCoupons.header', 'newsletter', null, pdict.firstName, pdict.lastName)}</h1>
+    <p>${Resource.msg('newsletter.email.noCoupons.text', 'newsletter', null)}</p>
+</div>

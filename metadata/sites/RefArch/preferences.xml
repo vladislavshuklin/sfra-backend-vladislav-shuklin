@@ -58,9 +58,14 @@
     </standard-preferences>
     <custom-preferences>
         <all-instances/>
-        <development/>
+        <development>
+            <preference preference-id="cartTresholdAmount">200</preference>
+            <preference preference-id="emailAdmin">v.i.shuklin@gmail.com</preference>
+            <preference preference-id="emailFrom">noreply@salesforce.com</preference>
+            <preference preference-id="emailNewsletterSubject">Confirmation of newsletter signup</preference>
+            <preference preference-id="emailSubjectCartProductAdded">Confirmation of your order</preference>
+        </development>
         <staging/>
         <production/>
     </custom-preferences>
 </preferences>
-

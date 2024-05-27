@@ -1,0 +1,6 @@
+<div>
+    <h1>${Resource.msgf('newsletter.email.welcome.header', 'newsletter', null, pdict.firstName, pdict.lastName)}</h1>
+    <p>${Resource.msg('newsletter.email.welcome.text', 'newsletter', null)}</p>
+    <p>${Resource.msg('newsletter.email.coupon.gift', 'newsletter', null)}</p>
+    <h2>${pdict.newsletterCoupon}</h2>
+</div>
