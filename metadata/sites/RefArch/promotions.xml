@@ -88,6 +88,17 @@
         </customer-groups>
     </campaign>
 
+    <campaign campaign-id="newsletterCouponCampaign">
+        <description>Subscription Greeting Coupons Giveaway</description>
+        <enabled-flag>true</enabled-flag>
+        <campaign-scope>
+            <applicable-online/>
+        </campaign-scope>
+        <coupons>
+            <coupon coupon-id="newsletterSubscriptionCoupon"/>
+        </coupons>
+    </campaign>
+
     <campaign campaign-id="Ref Arch No Coupon Test">
         <enabled-flag>true</enabled-flag>
         <campaign-scope>
@@ -2429,6 +2440,30 @@
         </product-promotion-rule>
     </promotion>
 
+    <promotion promotion-id="newsletterPromotion">
+        <enabled-flag>true</enabled-flag>
+        <archived-flag>false</archived-flag>
+        <searchable-flag>false</searchable-flag>
+        <refinable-flag>false</refinable-flag>
+        <prevent-requalifying-flag>false</prevent-requalifying-flag>
+        <prorate-across-eligible-items-flag>false</prorate-across-eligible-items-flag>
+        <exclusivity>global</exclusivity>
+        <currency>USD</currency>
+        <name xml:lang="x-default">Newsletter Promotion</name>
+        <callout-msg xml:lang="x-default">Newsletter Greeting Coupon</callout-msg>
+        <details xml:lang="x-default">Newsletter Greeting Coupon</details>
+        <order-promotion-rule>
+            <discount-only-qualifying-products>false</discount-only-qualifying-products>
+            <discounts condition-type="order-total">
+                <discount>
+                    <threshold>100.0</threshold>
+                    <amount>20.0</amount>
+                </discount>
+            </discounts>
+            <exclude-discounted-products>false</exclude-discounted-products>
+        </order-promotion-rule>
+    </promotion>
+
     <promotion promotion-id="ps3bundle-50off">
         <enabled-flag>false</enabled-flag>
         <archived-flag>false</archived-flag>
@@ -3027,6 +3062,14 @@
     <promotion-campaign-assignment promotion-id="freeshipping-tvs" campaign-id="electronics-promotions">
         <qualifiers match-mode="any">
             <customer-groups/>
+        </qualifiers>
+    </promotion-campaign-assignment>
+
+    <promotion-campaign-assignment promotion-id="newsletterPromotion" campaign-id="newsletterCouponCampaign">
+        <qualifiers match-mode="any">
+            <customer-groups/>
+            <source-codes/>
+            <coupons/>
         </qualifiers>
     </promotion-campaign-assignment>
 

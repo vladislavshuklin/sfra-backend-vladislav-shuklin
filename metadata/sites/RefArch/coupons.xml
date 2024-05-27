@@ -23,6 +23,24 @@
         <single-code>orderLevel</single-code>
     </coupon>
 
+    <coupon coupon-id="newsletterSubscriptionCoupon">
+        <description>Newsletter Greeting Coupon</description>
+        <enabled-flag>true</enabled-flag>
+        <case-insensitive>true</case-insensitive>
+        <redemption-limits>
+            <limit-per-code>1</limit-per-code>
+            <limit-per-customer>1</limit-per-customer>
+            <allow-multiple-codes-per-order>false</allow-multiple-codes-per-order>
+        </redemption-limits>
+        <system-codes>
+            <max-number-of-codes>100</max-number-of-codes>
+            <code-length>16</code-length>
+            <include-vowels>true</include-vowels>
+            <include-dashes>true</include-dashes>
+            <algorithm>F2</algorithm>
+        </system-codes>
+    </coupon>
+
     <coupon coupon-id="product">
         <description>coupon used for product level promotions.</description>
         <enabled-flag>true</enabled-flag>
