@@ -53,4 +53,56 @@
         </triggers>
     </job>
 
+    <job job-id="TestJob">
+        <description>Hello World</description>
+        <parameters/>
+        <flow>
+            <context site-id="RefArch"/>
+            <step step-id="TestJob" type="ExecuteScriptModule" enforce-restart="false">
+                <description>Test Job Hello World</description>
+                <parameters>
+                    <parameter name="ExecuteScriptModule.Module">app_storefront_custom/cartridge/scripts/job/TestJobModule.js</parameter>
+                    <parameter name="ExecuteScriptModule.FunctionName">execute</parameter>
+                    <parameter name="ExecuteScriptModule.Transactional">false</parameter>
+                    <parameter name="firstParam">Hello world</parameter>
+                    <parameter name="secondParam">From</parameter>
+                    <parameter name="thirdParam">Vlad</parameter>
+                </parameters>
+            </step>
+        </flow>
+        <rules/>
+        <triggers>
+            <run-once enabled="false">
+                <date>2024-05-28Z</date>
+                <time>07:32:00.000Z</time>
+            </run-once>
+        </triggers>
+    </job>
+
+    <job job-id="CategoryAssignment">
+        <description>Exercise 6 job that runs a javascript function (backend) that takes all products that have a certain brand (the brand is specified through a job parameter) and assigns them to a category of your choice. The javascript function creates an XML file that assigns all the products to the above-mentioned category. Please comment on your code.</description>
+        <parameters/>
+        <flow>
+            <context site-id="RefArch"/>
+            <step step-id="CategoryAssignment" type="ExecuteScriptModule" enforce-restart="false">
+                <description/>
+                <parameters>
+                    <parameter name="ExecuteScriptModule.Module">app_storefront_custom/cartridge/scripts/job/CategoryAssignment.js</parameter>
+                    <parameter name="ExecuteScriptModule.FunctionName">execute</parameter>
+                    <parameter name="ExecuteScriptModule.Transactional">false</parameter>
+                    <parameter name="brand">Hello</parameter>
+                    <parameter name="categoryID">newarrivals</parameter>
+                    <parameter name="catalogID">storefront-catalog-m-en</parameter>
+                </parameters>
+            </step>
+        </flow>
+        <rules/>
+        <triggers>
+            <run-once enabled="false">
+                <date>2024-05-28Z</date>
+                <time>12:43:00.000Z</time>
+            </run-once>
+        </triggers>
+    </job>
+
 </jobs>
